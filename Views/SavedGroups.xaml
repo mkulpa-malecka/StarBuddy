@@ -19,7 +19,7 @@
                     <TextCell Text="{Binding Name}" Detail="{Binding Description}" DetailColor="Grey" TextColor="Black">
                         <TextCell.ContextActions>
                             <!--dot .  means that we are binding to the entire obj-->
-                            <MenuItem Text="Delete" IsDestructive="True" Clicked="DeleteItem_Clicked" CommandParameter="{Binding .}"></MenuItem>
+                            <MenuItem Text="Unfavourite group" IsDestructive="True" Clicked="DeleteItem_Clicked" CommandParameter="{Binding .}"></MenuItem>
                         </TextCell.ContextActions>
                     </TextCell>
                 </DataTemplate>
