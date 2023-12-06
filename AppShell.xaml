@@ -9,9 +9,7 @@
     Title="StarBuddy"
     BackgroundColor="White">
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Domestic"
-             >
-    
+        <Tab Title="Domestic">
             <ShellContent
             Title="Search"
             ContentTemplate="{DataTemplate views:GroupPage}"

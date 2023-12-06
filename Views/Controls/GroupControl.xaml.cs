@@ -59,6 +59,7 @@ public partial class GroupControl : ContentView
 			MyGroup = value;
 		}
 	}
+
 	public GroupTypeEnum Type
 	{
 		get
