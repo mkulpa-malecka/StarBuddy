@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StarBuddy.Views.GroupPage"
+             x:Class="StarBuddy.Views.MyGroups"
              Title="StarBuddy">
 
-    <Grid RowDefinitions="50,*,50" ColumnDefinitions="*">
-        <SearchBar
-            x:Name="SearchBar"
-            Grid.Row="0"
-            Grid.Column="0"
-            Placeholder="Search Groups"
-            TextChanged="SearchBar_TextChanged"
-            TextColor="Black"
-            BackgroundColor="LightGray"></SearchBar>
+    <Grid RowDefinitions="*,50" ColumnDefinitions="*">
         <ListView
-            Grid.Row="1"
+            Grid.Row="0"
             Grid.Column="0"
             x:Name="listGroups"
             BackgroundColor="White"
@@ -35,7 +27,7 @@
         </ListView>
 
         <Button
-            Grid.Row="2"
+            Grid.Row="1"
             Grid.Column="0"
             x:Name="btnAdd"
             Text="Add Group"

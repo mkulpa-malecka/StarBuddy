@@ -13,6 +13,8 @@ namespace StarBuddy
 			Routing.RegisterRoute(nameof(EditGroupPage), typeof(EditGroupPage));
 			Routing.RegisterRoute(nameof(AddGroup), typeof(AddGroup));
 			Routing.RegisterRoute(nameof(GroupDetails), typeof(GroupDetails));
+			Routing.RegisterRoute(nameof(SavedGroups), typeof(SavedGroups));
+			Routing.RegisterRoute(nameof(MyGroups), typeof(MyGroups));
 		}
 	}
 }

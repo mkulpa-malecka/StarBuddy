@@ -68,6 +68,12 @@
 	  <Compile Update="Views\Controls\GroupControl.xaml.cs">
 	    <DependentUpon>GroupControl.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\SavedGroups.xaml.cs">
+	    <DependentUpon>SavedGroups.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\MyGroups.xaml.cs">
+	    <DependentUpon>MyGroups.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\GroupPage.xaml.cs">
 	    <DependentUpon>GroupPage.xaml</DependentUpon>
 	  </Compile>
@@ -87,6 +93,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\GroupDetails.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SavedGroups.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MyGroups.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\GroupPage.xaml">

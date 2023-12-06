@@ -17,6 +17,7 @@ public partial class AddGroup : ContentPage
 			Name = groupCtrl.Name,
 			Description = groupCtrl.Description,
 			Type = groupCtrl.Type,
+			Image = "https://cdn.pixabay.com/photo/2016/11/08/05/10/students-1807505_1280.jpg"
 		});
 
 		Shell.Current.GoToAsync($"//{nameof(GroupPage)}");

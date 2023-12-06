@@ -26,6 +26,12 @@
     <MauiXaml Update="Views\GroupDetails.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\SavedGroups.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\MyGroups.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\GroupPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

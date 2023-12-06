@@ -6,11 +6,21 @@
     xmlns:local="clr-namespace:StarBuddy"
     xmlns:views="clr-namespace:StarBuddy.Views"
     Shell.FlyoutBehavior="Disabled"
-    Title="StarBuddy">
+    Title="StarBuddy"
+    BackgroundColor="White">
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Domestic"
+             >
+    
+            <ShellContent
+            Title="Search"
+            ContentTemplate="{DataTemplate views:GroupPage}"
+            Route="GroupPage" />
+            <ShellContent Title="My Groups"
+               ContentTemplate="{DataTemplate views:MyGroups}" />
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate views:GroupPage}"
-        Route="GroupPage" />
-
+            <ShellContent Title="Favourites"
+             ContentTemplate="{DataTemplate views:SavedGroups}" />
+        </Tab>
+    </FlyoutItem>
 </Shell>
