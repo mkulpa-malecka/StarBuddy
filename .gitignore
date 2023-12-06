@@ -1,0 +1,9 @@
+﻿Framework/**/*.js
+Content/css/**/*.css
+Content/temp/
+Content/core/
+site.config
+package-lock.json
+.npmrc
+bin
+obj

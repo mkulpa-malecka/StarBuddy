@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarBuddy.Views.Controls.DetailControl">
+    <StackLayout Spacing="20" Margin="20">
+        <HorizontalStackLayout Padding="10,5">
+            <Label x:Name="groupName" VerticalOptions="Center" TextColor="Black" FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <Frame Padding="10,5" WidthRequest="65" CornerRadius="20"  HorizontalOptions="Center"  VerticalOptions="Center">
+            <HorizontalStackLayout>
+                <Label x:Name="groupType" VerticalOptions="Center" TextColor="Black"  HorizontalTextAlignment="Center"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Image
+            x:Name="groupImage"
+            Source="groupImage"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="Group of people" />
+
+        <Label x:Name="groupDescription" TextColor="Black"  LineBreakMode="WordWrap" LineHeight="1.6"/>
+
+        <Button x:Name="btnSave" Clicked="btnSave_Clicked" Text="Join Group" BackgroundColor="#006fcf" TextColor="White"/>
+        <Button x:Name="btnCancel" Clicked="btnCancel_Clicked" Text="Go back" BackgroundColor="#006fcf" TextColor="White"/>
+    </StackLayout>
+</ContentView>

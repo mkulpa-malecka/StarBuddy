@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarBuddy.Views.GroupPage"
+             Title="Groups">
+
+    <Grid RowDefinitions="50,*,50" ColumnDefinitions="*" Padding="10">
+        <SearchBar
+            x:Name="SearchBar"
+            Grid.Row="0"
+            Grid.Column="0"
+            Placeholder="Search Groups"
+            TextChanged="SearchBar_TextChanged"></SearchBar>
+        <ListView
+            Grid.Row="1"
+            Grid.Column="0"
+            x:Name="listGroups"
+            BackgroundColor="White"
+            SeparatorColor="Silver"
+            RowHeight="100"
+            ItemSelected="listGroups_ItemSelected"
+            ItemTapped="listGroups_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Description}" DetailColor="Grey" TextColor="Black">
+                        <TextCell.ContextActions>
+                            <!--dot .  means that we are binding to the entire obj-->
+                            <MenuItem Text="Delete" IsDestructive="True" Clicked="DeleteItem_Clicked" CommandParameter="{Binding .}"></MenuItem>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="0"
+            x:Name="btnAdd"
+            Text="Add Group"
+            Clicked="btnAdd_Clicked"
+            BackgroundColor="#006fcf"
+            TextColor="White"
+            />
+    </Grid>
+
+
+</ContentPage>

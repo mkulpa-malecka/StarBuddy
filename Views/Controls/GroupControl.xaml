@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="StarBuddy.Views.Controls.GroupControl" BackgroundColor="white">
+    <StackLayout Spacing="20" Margin="20">
+        <Frame Padding="10,5">
+            <HorizontalStackLayout>
+                <Label Text="Name:" VerticalOptions="Center" TextColor="Black" WidthRequest="100"/>
+                <Entry x:Name="groupName" VerticalOptions="Center" TextColor="Black">
+                    <Entry.Behaviors>
+                        <toolkit:TextValidationBehavior x:Name="nameValidator" MinimumLength="2" Flags="ValidateOnAttaching,ValidateOnValueChanged"/>
+                    </Entry.Behaviors>
+                </Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10,5">
+            <HorizontalStackLayout>
+                <Label Text="Description:" VerticalOptions="Center" TextColor="Black" WidthRequest="100"/>
+                <Entry x:Name="groupDescription" VerticalOptions="Center" TextColor="Black">
+                </Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10,5">
+            <HorizontalStackLayout>
+                <Label Text="Type:" VerticalOptions="Center" TextColor="Black" WidthRequest="100"/>
+                <Entry x:Name="groupType" VerticalOptions="Center" TextColor="Black"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button x:Name="btnSave" Clicked="btnSave_Clicked" Text="Save" BackgroundColor="#006fcf" TextColor="White"/>
+        <Button x:Name="btnCancel" Clicked="btnCancel_Clicked" Text="Go back" BackgroundColor="#006fcf" TextColor="White"/>
+    </StackLayout>
+</ContentView>

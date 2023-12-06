@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:controls="clr-namespace:StarBuddy.Views.Controls"
+             x:Class="StarBuddy.Views.GroupDetails"
+             Title="Group details"
+             BackgroundColor="White">
+    <controls:DetailControl x:Name="groupCtrl" OnSave="groupCtrl_OnSave" OnCancel="groupCtrl_OnCancel" OnError="groupCtrl_OnError"/>
+</ContentPage>
