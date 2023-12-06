@@ -30,7 +30,7 @@
             Grid.Row="1"
             Grid.Column="0"
             x:Name="btnAdd"
-            Text="Add Group"
+            Text="Create Group"
             Clicked="btnAdd_Clicked"
             BackgroundColor="#006fcf"
             TextColor="White"
