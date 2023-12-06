@@ -15,8 +15,6 @@ public partial class SavedGroups : ContentPage
 	{
 		base.OnAppearing();
 
-		SearchBar.Text = string.Empty;
-
 		LoadGroups();
 	}
 
@@ -52,12 +50,6 @@ public partial class SavedGroups : ContentPage
 	private void LoadGroups()
 	{
 		var groups = new ObservableCollection<Group>(GroupRepository.GetGroups());
-		listGroups.ItemsSource = groups;
-	}
-
-	private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
-	{
-		var groups = new ObservableCollection<Group>(GroupRepository.SearchGroups(((SearchBar)sender).Text));
-		listGroups.ItemsSource = groups;
+		listGroups.ItemsSource = groups.Where(x => x.IsSaved == true);
 	}
 }

@@ -10,5 +10,8 @@
 
 		public GroupTypeEnum Type { get; set; }
 		public List<User> Administrators { get; set; } = new List<User>();
+
+		public bool IsSaved { get; set; } = false;
+		public bool MyGroup { get; set; } = false;
 	}
 }

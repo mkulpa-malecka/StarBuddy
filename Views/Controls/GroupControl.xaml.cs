@@ -35,6 +35,30 @@ public partial class GroupControl : ContentView
 			groupDescription.Text = value;
 		}
 	}
+
+	public bool IsSaved
+	{
+		get
+		{
+			return IsSaved;
+		}
+		set
+		{
+			IsSaved = value;
+		}
+	}
+
+	public bool MyGroup
+	{
+		get
+		{
+			return MyGroup;
+		}
+		set
+		{
+			MyGroup = value;
+		}
+	}
 	public GroupTypeEnum Type
 	{
 		get
